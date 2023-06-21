@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>携胜集团年会抽奖</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="left-lanterns">
+                <img src="./assets/images/lantern.png" alt="" width="85" class="switch">
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="right-lanterns">
+                <img src="./assets/images/lantern.png" alt="" width="85" class="switch">
+            </div>
+        </div>
+    </div>
+    <div class="draw-main">
+        <div class="header-title"></div>
+        <div class="draw-round">
+            <span></span>
+        </div>
+        <ul class="draw-list">
+            <!-- <li class="draw-item">测试</li> -->
+        </ul>
+        <button class="start-up" id="start">点击开始</button>
+    </div>
+    <div class="footer">
+        <div class="footer-left">
+            一次抽取<input type="text" id="num" value="10" class="group-num" disabled>人
+        </div>
+        <div class="footer-right">
+            <i id="clear" title="清除"></i>
+        </div>
+        <div class="footer-bg"></div>
+    </div>
+    <div class="show-winners">
+        <span class="show-winners-title">中奖者名单</span>
+        <ul class="winners-list"></ul>
+    </div>
+    <span id="counter">参与人数：</span>
+    <div class="modal fade in" id="lottery-result" role="dialog" aria-hidden="true">
+        <canvas id="canvas"></canvas>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <canvas id="lottery-canvas" width="100%" height="100%"></canvas>
+                <div id="lottery">
+                    <ul class="modal-winner-list">
+                    </ul>
+                    <button id="close" title="关闭"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="stop-main" style="line-height: calc(100%);">
+        <div id="stop-time">3</div>
+        <div class="back"></div>
+    </div>
+</body>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</html>
